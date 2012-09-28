@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>&micro;Torrent User Manual - Redirect</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<script type="text/javascript">
+
+/* Map between path and actual pages */
+
+var PageMap = [ "index.html",
+{
+	userinterface : [ "html/AppendixA.html" ,
+	{
+		mainwindow : [ "html/AppendixA_01.html" ,
+		{
+			mainmenus        : [ "html/AppendixA_01_01.html" ],
+			toolbar          : [ "html/AppendixA_01_02.html" ],
+			categorylist     : [ "html/AppendixA_01_03.html" ],
+			torrentjobslist  : [ "html/AppendixA_01_04.html" ],
+			detailedinfopane : [ "html/AppendixA_01_05.html" ,
+			{
+				general   : [ "html/AppendixA_01_05_01.html" ],
+				trackers  : [ "html/AppendixA_01_05_02.html" ],
+				peers     : [ "html/AppendixA_01_05_03.html" ],
+				pieces    : [ "html/AppendixA_01_05_04.html" ],
+				files     : [ "html/AppendixA_01_05_05.html" ],
+				speed     : [ "html/AppendixA_01_05_06.html" ],
+				logger    : [ "html/AppendixA_01_05_07.html" ]
+			}],
+			statusbar        : [ "html/AppendixA_01_06.html" ]
+		}],
+
+		preferences : [ "html/AppendixA_02.html" ,
+		{
+			general     : [ "html/AppendixA_02_01.html" ],
+			uisettings  : [ "html/AppendixA_02_02.html" ],
+			directories : [ "html/AppendixA_02_03.html" ],
+			connection  : [ "html/AppendixA_02_04.html" ],
+			bandwidth   : [ "html/AppendixA_02_05.html" ],
+			bittorrent  : [ "html/AppendixA_02_06.html" ],
+			transfercap : [ "html/AppendixA_02_07.html" ],
+			queueing    : [ "html/AppendixA_02_08.html" ],
+			scheduler   : [ "html/AppendixA_02_09.html" ],
+			webui       : [ "html/AppendixA_02_10.html" ],
+			playback    : [ "html/AppendixA_02_11.html" ],
+			advanced    : [ "html/AppendixA_02_12.html" ,
+			{
+				uiextras  : [ "html/AppendixA_02_12_01.html" ],
+				diskcache : [ "html/AppendixA_02_12_02.html" ]
+			}]
+		}],
+
+		rssdownloader : [ "html/AppendixA_03.html" ,
+		{
+			favorites : [ "html/AppendixA_03_01.html" ],
+			history   : [ "html/AppendixA_03_02.html" ]
+		}],
+
+		miscellaneous : [ "html/AppendixA_04.html" ,
+		{
+			addnewtorrent     : [ "html/AppendixA_04_01.html" ],
+			addeditrssfeed    : [ "html/AppendixA_04_02.html" ],
+			createnewtorrent  : [ "html/AppendixA_04_03.html" ],
+			torrentproperties : [ "html/AppendixA_04_04.html" ,
+			{
+				general  : [ "html/AppendixA_04_04_01.html" ],
+				advanced : [ "html/AppendixA_04_04_02.html" ]
+			}],
+			trayicon          : [ "html/AppendixA_04_05.html" ]
+		}]
+	}],
+
+	faq : [ "html/FAQ.html" ,
+	{
+		installation      : [ "html/FAQ_01.html" ],
+		features          : [ "html/FAQ_02.html" ],
+		usage             : [ "html/FAQ_03.html" ],
+		network           : [ "html/FAQ_04.html" ],
+		troubleshooting   : [ "html/FAQ_05.html" ],
+		errormessages     : [ "html/FAQ_06.html" ],
+		incompatibilities : [ "html/FAQ_07.html" ],
+		miscellaneous     : [ "html/FAQ_08.html" ]
+	}],
+
+	glossary : [ "html/Glossary.html" ],
+
+	version : [ "version.txt" ]
+}];
+
+/* Shortcut path aliases */
+
+/*
+aliasPath( PageMap , "ui"                 , "userinterface"            );
+aliasPath( PageMap , "ui/main"            , "ui/mainwindow"            );
+aliasPath( PageMap , "ui/main/categories" , "ui/main/categorylist"     );
+aliasPath( PageMap , "ui/main/labels"     , "ui/main/categorylist"     );
+aliasPath( PageMap , "ui/main/infopane"   , "ui/main/detailedinfopane" );
+aliasPath( PageMap , "ui/main/menus"      , "ui/main/mainmenus"        );
+aliasPath( PageMap , "ui/misc"            , "ui/miscellaneous"         );
+aliasPath( PageMap , "ui/rss"             , "ui/rssdownloader"         );
+aliasPath( PageMap , "ui/prefs"           , "ui/preferences"           );
+aliasPath( PageMap , "prefs"              , "ui/prefs"                 );
+aliasPath( PageMap , "faq/errors"         , "faq/errormessages"        );
+aliasPath( PageMap , "faq/misc"           , "faq/miscellaneous"        );
+
+var tmpMap;
+
+tmpMap = traversePath( PageMap , "userinterface/preferences" );
+aliasPath( tmpMap , "uiextras"  , "advanced/uiextras"  );
+aliasPath( tmpMap , "diskcache" , "advanced/diskcache" );
+*/
+
+/* Perform path traversal */
+
+if (window.location.toString().indexOf("?") >= 0)
+	traversePath( PageMap , window.location.search , window.location.hash , true );
+else if (window.location.toString().indexOf("#") >= 0)
+	traversePath( PageMap , window.location.hash , "" , true );
+else
+	printPaths( PageMap );
+
+/******************************************************************************/
+
+/* Aliases a path */
+
+function aliasPath(map, alias, path) {
+	alias = alias.toLowerCase().split("/");
+
+	var lvl;
+
+	if (path) {
+		path  = path.toLowerCase().split("/");
+
+		var diff = path.length - alias.length,
+			refmap = map;
+
+		for (lvl = 0; lvl < diff; ++lvl) {
+			if (path[lvl] in refmap[1])
+				refmap = refmap[1][path[lvl]];
+			else
+				return;
+		}
+
+		for (lvl = 0; lvl < alias.length; ++lvl) {
+			if (path[lvl + diff] in refmap[1]) {
+				map[1][alias[lvl]] = refmap[1][path[lvl + diff]];
+				map = map[1][alias[lvl]];
+				refmap = refmap[1][path[lvl + diff]];
+			}
+			else
+				return;
+		}
+	}
+	else {
+		for (lvl = 0; lvl < alias.length - 1; ++lvl) {
+			if (alias[lvl] in map[1])
+				map = map[1][alias[lvl]];
+			else
+				return;
+		}
+		delete map[1][alias[lvl]];
+	}
+}
+
+/* Traverse a given path through the given page map */
+
+function traversePath(map, path, hash, redirect) {
+	path = path.substring(1).toLowerCase().split("/");
+
+	var lvl;
+
+	for (lvl = 0; lvl < path.length; ++lvl) {
+		if (path[lvl] in map[1])
+			map = map[1][path[lvl]];
+		else
+			break;
+	}
+
+	if (redirect) window.location = map[0] + (hash || "");
+	return map;
+}
+
+/* Prints path map */
+
+function printPaths(map, prefix) {
+	// NOTE: Be careful with aliasing, because this simple function does not
+	//       break circular references, which can cause infinite loops.
+
+	if (!prefix) {
+		prefix = "";
+		document.write('<style>table,td,th{border-collapse:collapse;border:1px solid black;padding: 3px;}</style>');
+		document.write('<table><tr><th>Path</th><th>Page</th>');
+	}
+
+	document.write(
+		'<tr>' +
+			'<td><a href="' + window.location.pathname + '?' + prefix + '" onclick="window.location=\'' + map[0] + '\'; return false;">?' + prefix + '</td>' +
+			'<td><a href="' + map[0] + '">' + map[0] + '</a></td>' +
+		'</tr>'
+	);
+
+	for (var key in map[1]) {
+		printPaths(map[1][key], (prefix ? prefix + '/' : '') + key);
+	}
+
+	if (!prefix) {
+		document.write('</table>');
+	}
+}
+
+	</script>
+</body>
+</html>

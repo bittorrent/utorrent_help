@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>&micro;Torrent User Manual - Formatting Conventions</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="icon" href="img/icon.ico" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<style type="text/css">
+		pre { font-size: 1.5em; }
+	</style>
+</head>
+<body>
+
+	<div id="wrapper">
+		<div class="navi" id="naviTop">
+			<ul>
+				<li><a>&laquo;&nbsp; Previous</a></li>
+				<li><a>Next &nbsp;&raquo;</a></li>
+			</ul>
+		</div>
+		<div id="header">
+			<h1>&micro;Torrent User Manual</h1>
+			Formatting Conventions
+		</div>
+		<div id="content">
+
+<p>Formatting conventions for anyone who updates the manual... Yeah, who cares, right? Well, I'm a consistency freak, and really would prefer it if everything were kept (*gasp*) consistent. So what do we do about it? We set some guidelines about how formatting, terminology, and stuff in general are done!</p>
+
+<hr />
+<h3>TERMINOLOGY</h3>
+<p>Yes, I use specific terminology for stuff in an attempt to keep word confusion to a minimum for the reader. Here are some of the words I can think of:</p>
+<ul>
+	<li><strong>.torrent file</strong>: used when referring to .torrent files</li>
+	<li><strong>torrent job(s)</strong>: refers to any of the torrents listed in the torrent jobs list</li>
+	<li><strong>torrent contents</strong>: the files being downloaded</li>
+	<li><strong>torrent</strong>: used <em>only</em> if whatever you're trying to describe fits in none of the above, and there is no other reasonable way to refer to it</li>
+	<li><strong>KiB/s, MiB/s, etc</strong>: binary prefixes are used rather than SI prefixes</li>	
+</ul>
+<p>If there is a word that's worth defining for the user, make sure you add it to the glossary.</p>
+
+<hr />
+<h3>BASIC FORMATTING</h3>
+<p>Here are some of the more obvious formatting conventions I chose to use:</p>
+<ul>
+	<li>&lt;strong&gt;&lt;/strong&gt; rather than &lt;b&gt;&lt;/b&gt;</li>
+	<li>&lt;em&gt;&lt;/em&gt; rather than  &lt;i&gt;&lt;/i&gt;</li>
+	<li><strong>key term</strong> for key terms (vocabulary)</li>
+	<li>"<em>interface text</em>" for text that comes directly from the interface (when yo're referring to the exact name of an interface control, for example). Do note the quotations around the &lt;em&gt;&lt;/em&gt; tags. This only for when you are mentioning the control, not for when you are listing it for description.</li>
+	<li><span class="key">modifier</span>+<span class="key">key</span> for keyboard combinations</li>
+	<li><span class="mouse">mouse action</span> for mouse actions (like "<span class="mouse">double-click</span>ing," or "<span class="mouse">secondary-click</span>")</li>
+	<li><span class="value">value</span> for text that refers to some specific value (like "<span class="value">30</span> KiB/s," or "<span class="value">MaxConnections</span> in the Registry")</li>
+</ul>
+
+<hr />
+<h3>ANCHORING</h3>
+<p>Anchoring... I actually use something along the lines of</p>
+<pre>&lt;a id="SOME_NAME"&gt;&lt;/a&gt;</pre>
+<p>instead of</p>
+<pre>&lt;a name="SOME_NAME"&gt;&lt;/a&gt;</pre>
+<p>since the latter was deprecated in XHTML 1.1. If something you're adding an anchor to is a part of another heading, you should use</p>
+<pre>&lt;a id="HEADING_ANCHOR_NAME.SUB_ITEM"&gt;&lt;/a&gt;</pre>
+<p>where HEADING_ANCHOR_NAME is the anchor name for the heading that the item falls under. Yes, there is sub-sub-anchoring too, if you have a heading with a sub-heading with something that needs anchoring. You can check most of the AppendixA pages for examples if I just confused you.</p>
+<p>What should get an anchor? ANY control getting described, clearly. Important sections of other stuff though as well. Taking a look at the source for all the files would give a good sense of what I felt needed to be anchored, though. Why do anchoring at all? It makes it easier to link to later.</p>
+<p>The above examples are actually simpler than they really are or should be. The full anchoring I use is self-referencing, like</p>
+<pre>&lt;a class="name" id="CONTROL_NAME" href="#CONTROL_NAME"&gt;CONTROL NAME&lt;/a&gt;</pre>
+<p>(example: <a class="name" id="CONTROL_NAME" href="#CONTROL_NAME">CONTROL NAME</a>)</p>
+<p>Yes, I keep the &lt;a&gt;&lt;/a&gt; inside of other tags (and you should too) because other tags might have some weird margins, which would cause the anchored linking to have some space above. If you're not sure what I'm referring to... well, just do it this way please? :)</p>
+<p>Why should anyone bother to do that? Because it makes it easier to actually get a link to the particular item. Say, for example, I wanted to get the link to a particular item in the FAQ. Since it has no TOC, I would have to look through the source to find the ID to append onto the URL. BUT, if you did it my way, the user could simply click the link and copy the address bar, or right-click the anchor and copy the location. Ease of access!</p>
+<p>When creating anchor IDs, there are some characters that should be removed and/or changed:</p>
+<ul>
+	<li>&micro; (&amp;micro;) should be changed to u</li>
+	<li>most non-alphanumeric characters, like commas, single- or double-quotes, semicolons, or questionmarks should be removed (well, they're not valid XHTML anyhow)</li>
+	<li>anything within parentheses should be excluded from the anchor ID, so avoid using parentheses for links</li> 
+</ul>
+
+<hr />
+<h3>LISTING STUFF</h3>
+<p>Meh, I rarely use ordered lists (&lt;ol&gt;&lt;/ol&gt;), and prefer to explain everything in paragraphs or &lt;ul&gt;&lt;/ul&gt; instead... Do realize there are "uienum" and "sublist" classes for lists, so make use of them properly (please? xD).</p>
+<p>If a list item has a specific theme with a name (like when you're listing interface controls), put a &lt;strong&gt;&lt;/strong&gt; around the name/title of the list item... Since that description was probably more confusing than helpful, just take a look at the other lists if you're in doubt about what to do (yes, I said that before, didn't I? :P)</p>
+
+<hr />
+<h3>MISCELLANEOUS</h3>
+<p>The "micro" sign should be written as &amp;micro; and not as an actual "micro," as everything is encoded in ANSI.</p>
+
+<hr />
+<p>The consistency freak,</p>
+<p>Ultima</p>
+
+		</div>
+		<div class="navi" id="naviBot">
+			<ul>
+				<li><a>&laquo;&nbsp; Previous</a></li>
+				<li><a>Next &nbsp;&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

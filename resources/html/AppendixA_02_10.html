@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Preferences: Web UI</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="icon" href="../img/icon.ico" type="image/vnd.microsoft.icon" />
+	<link rel="stylesheet" href="../style.css" type="text/css" />
+</head>
+<body>
+	<div id="wrapper">
+		<div class="navi" id="naviTop">
+			<ul>
+				<li><a href="AppendixA_02_09.html">&laquo;&nbsp; Previous</a></li>
+				<li><a href="AppendixA_02_11.html">Next &nbsp;&raquo;</a></li>
+			</ul>
+		</div>
+		<div id="header">
+			<a href="../index.html">&micro;Torrent User Manual</a> &gt;
+			<a href="AppendixA.html">Appendix A: The &micro;Torrent Interface</a> &gt;
+			<a href="AppendixA_02.html">Preferences</a>
+			<h1>Web UI</h1>
+		</div>
+		<div id="content">
+
+<p>The Web UI is used to allow external applications to control &micro;Torrent remotely. The default Web UI for &micro;Torrent is accessible to modern browsers that support AJAX.</p>
+
+<p><a class="name" id="Enable_Web_UI" href="#Enable_Web_UI">Enable Web UI</a> will enable the web interface if checked. When enabled, &micro;Torrent should automatically download the required <a href="AppendixB_01.html#External_Files.Extended_Functionality.webui.zip">webui.zip</a> file from the &micro;Torrent server. If it doesn't, you can still download it manually from <a href="ExternalLinks.html#uTorrent">the webpage</a> and properly place it in <a href="AppendixB_01.html">the &micro;Torrent settings directory</a>.</p>
+
+<h3><a class="name" id="Authentication" href="#Authentication">Authentication</a></h3>
+<ul class="uienum">
+	<li>The <a class="name" id="Authentication.Username" href="#Authentication.Username">Username</a> field allows you to specify a username to log into the web interface, and is required in order to use the web interface.</li>
+	<li>The <a class="name" id="Authentication.Password" href="#Authentication.Password">Password</a> field sets the password for this username. It may be left blank if you do not wish to password-protect the web interface.</li>
+	<li><a class="name" id="Authentication.Enable_Guest_account_with_username" href="#Authentication.Enable_Guest_account_with_username">Enable Guest account with username</a> enables or disables the guest account, a user that can view (but not edit) the torrent jobs currently in your torrent jobs list. If enabled, a username for the guest account must be specified in order for it to work.</li>
+</ul>
+
+<h3><a class="name" id="Connectivity" href="#Connectivity">Connectivity</a></h3>
+<ul class="uienum">
+	<li><a class="name" id="Connectivity.Alternative_listening_port" href="#Connectivity.Alternative_listening_port">Alternative listening port</a>, if enabled, tells &micro;Torrent to use the specified port to listen to Web UI requests (and the <a href="AppendixA_02_12.html#bt.enable_tracker">internal tracker</a> if enabled). This option is especially useful for those who randomize their ports each time &micro;Torrent starts. If left disabled, &micro;Torrent will serve the web interface over the same port as its normal listening port. You must forward this port manually, even if you use UPnP to forward the normal &micro;Torrent listening port.</li>
+	<li><a class="name" id="Connectivity.Restrict_access_to_the_following_IPs" href="#Connectivity.Restrict_access_to_the_following_IPs">Restrict access to the following IPs</a> allows you to limit the IPs that are allowed to connect to the web interface. Multiple IPs may be specified, but they must be separated by commas. IP ranges may be specified using CIDR notation.</li>
+</ul>
+
+		</div>
+		<div class="navi" id="naviBot">
+			<ul>
+				<li><a href="AppendixA_02_09.html">&laquo;&nbsp; Previous</a></li>
+				<li><a href="AppendixA_02_11.html">Next &nbsp;&raquo;</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
