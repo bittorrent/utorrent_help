@@ -1,0 +1,440 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+	<param name="WindowName" value="main">
+	<param name="ExWindow Styles" value="0x0">
+	<param name="Window Styles" value="0x227">
+<param name="Font" value=",8,0">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="&micro;Torrent User Manual">
+		<param name="Local" value="index.html">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 01: Introduction to &micro;Torrent">
+			<param name="Local" value="html\Chapter01.html">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="About &micro;Torrent">
+				<param name="Local" value="html\Chapter01_01.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Features List">
+				<param name="Local" value="html\Chapter01_02.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="System Requirements">
+				<param name="Local" value="html\Chapter01_03.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 02: Basic Guides">
+			<param name="Local" value="html\Chapter02.html">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="The Basics of BitTorrent">
+				<param name="Local" value="html\Chapter02_01.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Setup Guide">
+				<param name="Local" value="html\Chapter02_02.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Port Forwarding">
+				<param name="Local" value="html\Chapter02_03.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Downloading With &micro;Torrent">
+				<param name="Local" value="html\Chapter02_04.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Chapter 03: Advanced Guides">
+			<param name="Local" value="html\Chapter03.html">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="More Port Forwarding">
+				<param name="Local" value="html\Chapter03_01.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Migrating to Another Location">
+				<param name="Local" value="html\Chapter03_02.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Switching from Another Client">
+				<param name="Local" value="html\Chapter03_03.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Alternative Operating Systems">
+				<param name="Local" value="html\Chapter03_04.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Appendix A: The &micro;Torrent Interface">
+			<param name="Local" value="html\AppendixA.html">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Main Window">
+				<param name="Local" value="html\AppendixA_01.html">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Main Menus">
+					<param name="Local" value="html\AppendixA_01_01.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Toolbar">
+					<param name="Local" value="html\AppendixA_01_02.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Category List">
+					<param name="Local" value="html\AppendixA_01_03.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Torrent Jobs List">
+					<param name="Local" value="html\AppendixA_01_04.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Detailed Info Pane">
+					<param name="Local" value="html\AppendixA_01_05.html">
+					<param name="ImageNumber" value="1">
+					</OBJECT>
+				<UL>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Files">
+						<param name="Local" value="html\AppendixA_01_05_05.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Info">
+						<param name="Local" value="html\AppendixA_01_05_01.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Ratings">
+						<param name="Local" value="html\AppendixA_01_05_08.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Trackers">
+						<param name="Local" value="html\AppendixA_01_05_02.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Peers">
+						<param name="Local" value="html\AppendixA_01_05_03.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Pieces">
+						<param name="Local" value="html\AppendixA_01_05_04.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Speed">
+						<param name="Local" value="html\AppendixA_01_05_06.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Logger">
+						<param name="Local" value="html\AppendixA_01_05_07.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+				</UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Status Bar">
+					<param name="Local" value="html\AppendixA_01_06.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Preferences">
+				<param name="Local" value="html\AppendixA_02.html">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="General">
+					<param name="Local" value="html\AppendixA_02_01.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UI Settings">
+					<param name="Local" value="html\AppendixA_02_02.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Directories">
+					<param name="Local" value="html\AppendixA_02_03.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Connection">
+					<param name="Local" value="html\AppendixA_02_04.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Bandwidth">
+					<param name="Local" value="html\AppendixA_02_05.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="BitTorrent">
+					<param name="Local" value="html\AppendixA_02_06.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Transfer Cap">
+					<param name="Local" value="html\AppendixA_02_07.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Queueing">
+					<param name="Local" value="html\AppendixA_02_08.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Scheduler">
+					<param name="Local" value="html\AppendixA_02_09.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Remote">
+					<param name="Local" value="html\AppendixA_02_10.html">
+					<param name="URL" value="html\AppendixA_02_10.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Playback">
+					<param name="Local" value="html\AppendixA_02_11.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DNA">
+					<param name="Local" value="html\AppendixA_02_11a.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Paired Devices">
+					<param name="Local" value="html\AppendixA_02_11b.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Advanced">
+					<param name="Local" value="html\AppendixA_02_12.html">
+					<param name="ImageNumber" value="1">
+					</OBJECT>
+				<UL>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="UI Extras">
+						<param name="Local" value="html\AppendixA_02_12_01.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Disk Cache">
+						<param name="Local" value="html\AppendixA_02_12_02.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Web UI">
+						<param name="Local" value="html\AppendixA_02_12_03.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Run Program">
+						<param name="Local" value="html\AppendixA_02_12_04.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+				</UL>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="RSS Downloader">
+				<param name="Local" value="html\AppendixA_03.html">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Favorites">
+					<param name="Local" value="html\AppendixA_03_01.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="History">
+					<param name="Local" value="html\AppendixA_03_02.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Miscellaneous">
+				<param name="Local" value="html\AppendixA_04.html">
+				<param name="ImageNumber" value="1">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Add New Torrent">
+					<param name="Local" value="html\AppendixA_04_01.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Add/Edit RSS Feed">
+					<param name="Local" value="html\AppendixA_04_02.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Create New Torrent">
+					<param name="Local" value="html\AppendixA_04_03.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Torrent Properties">
+					<param name="Local" value="html\AppendixA_04_04.html">
+					<param name="ImageNumber" value="1">
+					</OBJECT>
+				<UL>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="General">
+						<param name="Local" value="html\AppendixA_04_04_01.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Advanced">
+						<param name="Local" value="html\AppendixA_04_04_02.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+				</UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Tray Icon">
+					<param name="Local" value="html\AppendixA_04_05.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+			</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Appendix B: Advanced Information">
+			<param name="Local" value="html\AppendixB.html">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Settings Directory">
+				<param name="Local" value="html\AppendixB_01.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="URL Formatting">
+				<param name="Local" value="html\AppendixB_02.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Wildcards">
+				<param name="Local" value="html\AppendixB_03.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Command Line Options">
+				<param name="Local" value="html\AppendixB_04.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Keyboard Shortcuts">
+				<param name="Local" value="html\AppendixB_05.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="FAQ: Frequently Asked Questions">
+			<param name="Local" value="html\FAQ.html">
+			<param name="ImageNumber" value="1">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Installation">
+				<param name="Local" value="html\FAQ_01.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Features">
+				<param name="Local" value="html\FAQ_02.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Usage">
+				<param name="Local" value="html\FAQ_03.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Network">
+				<param name="Local" value="html\FAQ_04.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Troubleshooting">
+				<param name="Local" value="html\FAQ_05.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Error Messages">
+				<param name="Local" value="html\FAQ_06.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Incompatibilities">
+				<param name="Local" value="html\FAQ_07.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Miscellaneous">
+				<param name="Local" value="html\FAQ_08.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Glossary">
+			<param name="Local" value="html\Glossary.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="External Links">
+			<param name="Local" value="html\ExternalLinks.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Credits">
+			<param name="Local" value="html\Credits.html">
+			<param name="ImageNumber" value="11">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>
