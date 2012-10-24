@@ -1,7 +1,8 @@
 #!/bin/bash
+set LANG="C.utf8"
 echo "This CHM compiler script will only work on cygwin. Requires 7z.exe and 7z.dll!"
-VERSION=321
-BTVERSION=771
+LONGUTVERSION="3.2.1"
+LONGBTVERSION="7.7.1"
 REVISION=28086
 DATE=$(date +"%Y%m%d")
 DIR=$(dirname $0);
@@ -9,9 +10,13 @@ BTDIR=/tmp/bittorrent
 cd $DIR
 which hhc.exe > /dev/null 2>&1
 if [ $? -eq 0 ]; then
-hhc='hhc.exe'
+	hhc='hhc.exe'
 else
-hhc='./hhc.exe'
+	hhc='./hhc.exe'
+	if [ ! -f $hhc ]; then
+		echo 'hhc.exe missing. Please install HTML Help Workshop and add it to your path';
+		exit
+	fi
 fi
 which 7z >/dev/null 2>&1
 if [ $? -eq 0 ]; then
@@ -19,14 +24,16 @@ compress='7z';
 else
 compress='./7z';
 fi
-mkdir $BTDIR/
-mkdir $DIR/output
+mkdir -p $BTDIR/
+mkdir -p $DIR/output
 
+UTVERSION=$(echo $LONGUTVERSION | tr -d '.')
+BTVERSION=$(echo $LONGBTVERSION | tr -d '.')
 cp -R $DIR/resources/* $BTDIR/
 for i in "$BTDIR/html/*" "$BTDIR/*.h*"; do
 sed -i s/'&micro;Torrent'/BitTorrent/g $i;
-sed -i s/v2.2/v7.2/g $i;
-sed -i s/µTorrent/BitTorrent/g $i;
+sed -i s/v$LONGUTVERSION/v$LONGBTVERSION/g $i;
+sed -i s/ÂµTorrent/BitTorrent/g $i;
 sed -i s/main\.png/main_bittorrent.png/g $i;
 sed -i s/icon\.ico/icon_bittorrent\.ico/g $i;
 done
@@ -36,15 +43,15 @@ sed -i s/utorrent\.chm/bittorrent.chm/g $BTDIR/utorrent.hhp
 sed -i s/utorrent\.log/bittorrent.log/g $BTDIR/utorrent.hhp
 echo $BTVERSION-$REVISION-$DATE > $BTDIR/version.txt
 $hhc $(cygpath -w $BTDIR/utorrent.hhp)
-rm $DIR/output/bittorrent-help-${BTVERSION}0.zip
+rm -f $DIR/output/bittorrent-help-${BTVERSION}0.zip
 $compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/bittorrent-help-${BTVERSION}0.zip) $(cygpath -w $BTDIR/bittorrent.chm) $(cygpath -w $BTDIR/version.txt)
 mv $BTDIR/bittorrent.log $DIR/output/
 rm -r $BTDIR
 
-echo $VERSION-$REVISION-$DATE > $DIR/resources/version.txt
+echo $UTVERSION-$REVISION-$DATE > $DIR/resources/version.txt
 $hhc $(cygpath -w $DIR/resources/utorrent.hhp)
-rm $DIR/output/utorrent-help-${VERSION}0.zip
-$compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/utorrent-help-${VERSION}0.zip) $(cygpath -w $DIR/resources/utorrent.chm) $(cygpath -w $DIR/resources/version.txt)
+rm -f $DIR/output/utorrent-help-${UTVERSION}0.zip
+$compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/utorrent-help-${UTVERSION}0.zip) $(cygpath -w $DIR/resources/utorrent.chm) $(cygpath -w $DIR/resources/version.txt)
 mv $DIR/resources/utorrent.log $DIR/output/
 rm $DIR/resources/utorrent.chm
 rm $DIR/resources/version.txt
