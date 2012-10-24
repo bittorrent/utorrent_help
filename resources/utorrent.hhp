@@ -6,9 +6,9 @@ Contents file=utorrent.hhc
 Default Window=main
 Default topic=index.html
 Display compile progress=Yes
+Enhanced decompilation=Yes
 Error log file=utorrent.log
 Full-text search=Yes
-Index file=Index1.hhk
 Language=0x409 English (United States)
 Title=µTorrent User Manual
 
@@ -126,12 +126,12 @@ img\tstatus_stopped.png
 index.html
 redirect.html
 style.css
-version.txt
 html\AppendixA_02_11a.html
 html\AppendixA_02_11b.html
 html\AppendixA_02_12_04.html
 html\AppendixA_02_12_03.html
 html\AppendixA_01_05_08.html
+html\Chapter02_05.html
 
 [INFOTYPES]
 

@@ -66,6 +66,11 @@
 				<param name="Local" value="html\Chapter02_04.html">
 				<param name="ImageNumber" value="11">
 				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Downloading Using the RSS Downloader ">
+				<param name="Local" value="html\Chapter02_05.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Chapter 03: Advanced Guides">
