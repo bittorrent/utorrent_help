@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "This CHM compiler script will only work on cygwin. Requires 7z.exe and 7z.dll!"
 VERSION=321
-BTVERSION=720
+BTVERSION=771
 REVISION=28086
 DATE=$(date +"%Y%m%d")
 DIR=$(dirname $0);
