@@ -1,23 +1,23 @@
 #!/bin/bash
 echo "This CHM compiler script will only work on cygwin. Requires 7z.exe and 7z.dll!"
-VERSION=220
+VERSION=321
 BTVERSION=720
-REVISION=23235
+REVISION=28086
 DATE=$(date +"%Y%m%d")
 DIR=$(dirname $0);
 BTDIR=/tmp/bittorrent
 cd $DIR
 which hhc.exe > /dev/null 2>&1
 if [ $? -eq 0 ]; then
-	hhc='hhc.exe'
+hhc='hhc.exe'
 else
-	hhc='./hhc.exe'
+hhc='./hhc.exe'
 fi
 which 7z >/dev/null 2>&1
 if [ $? -eq 0 ]; then
-	compress='7z';
+compress='7z';
 else
-	compress='./7z';
+compress='./7z';
 fi
 mkdir $BTDIR/
 mkdir $DIR/output
@@ -26,7 +26,7 @@ cp -R $DIR/resources/* $BTDIR/
 for i in "$BTDIR/html/*" "$BTDIR/*.h*"; do
 sed -i s/'&micro;Torrent'/BitTorrent/g $i;
 sed -i s/v2.2/v7.2/g $i;
-sed -i s/ÂµTorrent/BitTorrent/g $i;
+sed -i s/µTorrent/BitTorrent/g $i;
 sed -i s/main\.png/main_bittorrent.png/g $i;
 sed -i s/icon\.ico/icon_bittorrent\.ico/g $i;
 done
@@ -48,3 +48,4 @@ $compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/utorrent-help-${VERSION}0.zi
 mv $DIR/resources/utorrent.log $DIR/output/
 rm $DIR/resources/utorrent.chm
 rm $DIR/resources/version.txt
+

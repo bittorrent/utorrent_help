@@ -1,33 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-	<title>Main Window: Detailed Info Pane &gt; Peers</title>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><title>Main Window: Detailed Info Pane &gt; Peers</title>
+
+
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="icon" href="../img/icon.ico" type="image/vnd.microsoft.icon" />
-	<link rel="stylesheet" href="../style.css" type="text/css" />
-</head>
-<body>
+	<link rel="stylesheet" href="../style.css" type="text/css" /></head><body>
 	<div id="wrapper">
 		<div class="navi" id="naviTop">
 			<ul>
-				<li><a href="AppendixA_01_05_02.html">&laquo;&nbsp; Previous</a></li>
-				<li><a href="AppendixA_01_05_04.html">Next &nbsp;&raquo;</a></li>
+				<li><a href="AppendixA_01_05_02.html">«&nbsp; Previous</a></li>
+				<li><a href="AppendixA_01_05_04.html">Next &nbsp;»</a></li>
 			</ul>
 		</div>
 		<div id="header">
-			<a href="../index.html">&micro;Torrent User Manual</a> &gt;
-			<a href="AppendixA.html">Appendix A: The &micro;Torrent Interface</a> &gt;
+			<a href="../index.html">µTorrent User Manual</a> &gt;
+			<a href="AppendixA.html">Appendix A: The µTorrent Interface</a> &gt;
 			<a href="AppendixA_01.html">Main Window</a> &gt;
 			<a href="AppendixA_01_05.html">Detailed Info Pane</a>
 			<h1>Peers</h1>
 		</div>
 		<div id="content">
 
-<p>The Peers tab is where you'll find information about all the peers you are currently connected to on the selected torrent. The following is a description of each column:</p>
+<p><a class="name" id="Remove" href="AppendixA_01_02.html#Remove"><img style="border: 0px solid ; width: 14px; height: 12px;" class="floatLeft" src="../img/tabs_peers.png" alt="Remove" /></a>The Peers tab is where you'll find information about all the peers
+you are currently connected to on the selected torrent. The following
+is a description of each column:</p>
 <ul class="uienum">
 	<li><a class="name" id="IP" href="#IP">IP</a> displays the peer's IP address and the flag of the country they're from. If <a href="#Context_Menu.Resolve_IPs">Resolve IPs</a> is enabled, the country flag and hostname will be displayed instead.</li>
 	<li><a class="name" id="Percent" href="#Percent">%</a> displays the approximate percent of the torrent job the peer has completed.</li>
-	<li><a class="name" id="Client" href="#Client">Client</a> displays the BitTorrent client that the peer reports it is using. If &micro;Torrent suspects the client of spoofing (faking) its client ID, it will note it as such.</li>
+	<li><a class="name" id="Client" href="#Client">Client</a>
+displays the BitTorrent client that the peer reports it is using. If
+µTorrent suspects the client of spoofing (faking) its client ID, it
+will note it as such.</li>
 	<li><a class="name" id="Debug" href="#Debug">Debug</a> displays information that might be useful in debugging problems.</li>
 	<li><a class="name" id="Down_Speed" href="#Down_Speed">Down Speed</a> is the averaged speed at which you are downloading data from the peer.</li>
 	<li><a class="name" id="Downloaded" href="#Downloaded">Downloaded</a> is the amount of data you have downloaded from the peer since the torrent job was added.</li>
@@ -56,7 +60,11 @@
 	<li><a class="name" id="Inactive" href="#Inactive">Inactive</a> displays the number of seconds since the last non-keepalive message was sent with this peer.</li>
 	<li><a class="name" id="MaxDown" href="#MaxDown">MaxDown</a> is the peak, unaveraged speed at which you were downloading from the peer.</li>
 	<li><a class="name" id="MaxUp" href="#MaxUp">MaxUp</a> is the peak, unaveraged speed at which you were uploading to the peer.</li>
-	<li><a class="name" id="Peer_Download_Rate" href="#Peer_Download_Rate">Peer Download Rate</a> is an estimated rate at which the peer is downloading based on the peer's reported change in pieces obtained. This estimation is very crude and is most likely inaccurate, so it should only be lightly relied upon.</li>
+	<li><a class="name" id="Peer_Download_Rate" href="#Peer_Download_Rate">Peer Download Rate</a>
+is an estimated rate at which the peer is downloading based on the
+peer's reported change in pieces obtained. This estimation is very
+crude and is most likely inaccurate, so it should only be lightly
+relied upon.</li>
 	<li><a class="name" id="Port" href="#Port">Port</a> displays the listening port that the peer is using.</li>
 	<li><a class="name" id="Queued" href="#Queued">Queued</a> displays the number of bytes requested by a peer that was left unsent by your client.</li>
 	<li><a class="name" id="Relevance" href="#Relevance">Relevance</a> is the percent of the torrent contents that the peer has that you currently do not have.</li>
@@ -68,7 +76,11 @@
 
 <h3><a class="name" id="Context_Menu" href="#Context_Menu">Context Menu</a></h3>
 <ul class="uienum">
-	<li><a class="name" id="Context_Menu.Add_Peer" href="#Context_Menu.Add_Peer">Add Peer...</a> allows you to add a peer manually if you know the peer's IP address and port. &micro;Torrent will attempt to connect to the newly-added peer as soon as possible. Only one peer can be added at a time, in the following format: <span class="value">IP:port</span>
+	<li><a class="name" id="Context_Menu.Add_Peer" href="#Context_Menu.Add_Peer">Add Peer...</a>
+allows you to add a peer manually if you know the peer's IP address and
+port. µTorrent will attempt to connect to the newly-added peer as soon
+as possible. Only one peer can be added at a time, in the following
+format: <span class="value">IP:port</span>
 		<ul class="sublist">
 			<li><a class="name" id="Context_Menu.Add_Peer.IPv4" href="#Context_Menu.Add_Peer.IPv4">IPv4</a> IPs must be inputted in standard dot-decimal notation, like so: <span class="value">127.0.0.1:80</span>.</li>
 			<li><a class="name" id="Context_Menu.Add_Peer.IPv6" href="#Context_Menu.Add_Peer.IPv6">IPv6</a> IPs must be inputted in colon-hexadecimal notation (enclosed between square brakets), like so: <span class="value">[0000:0000:0000:0000:0000:0000:0000:0001]:80</span>. Zero-grouped IPv6 addresses are accepted.</li>
@@ -77,19 +89,21 @@
 	<li class="sep">&nbsp;</li>
 	<li><a class="name" id="Context_Menu.Copy_Peer_List" href="#Context_Menu.Copy_Peer_List">Copy Peer List</a> will copy the IP addresses and the ports of every peer it has in its peer cache to the clipboard, one <span class="value">IP:port</span> pair per line.</li>
 	<li><a class="name" id="Context_Menu.Copy_Selected_Hosts" href="#Context_Menu.Copy_Selected_Hosts">Copy Selected Hosts</a> will copy the IP addresses and the ports of each selected peer, one <span class="value">IP:port</span> pair per line.</li>
-	<li><a class="name" id="Context_Menu.Log_Traffic_to_Logger_Tab" href="#Context_Menu.Log_Traffic_to_Logger_Tab">Log Traffic to Logger Tab</a> tells &micro;Torrent to log connection details from the torrent job to the <a href="AppendixA_01_05_07.html">Logger tab</a>.</li>
-	<li><a class="name" id="Context_Menu.Reload_IPFilter" href="#Context_Menu.Reload_IPFilter">Reload IPFilter</a> forces &micro;Torrent to reload <a href="AppendixB_01.html#External_Files.Extended_Functionality.ipfilter.dat">ipfilter.dat</a>. This option is disabled when <a href="AppendixA_02_12.html#ipfilter.enable">ipfilter.enable</a> is disabled.</li>
+	<li><a class="name" id="Context_Menu.Log_Traffic_to_Logger_Tab" href="#Context_Menu.Log_Traffic_to_Logger_Tab">Log Traffic to Logger Tab</a> tells µTorrent to log connection details from the torrent job to the <a href="AppendixA_01_05_07.html">Logger tab</a>.</li>
+	<li><a class="name" id="Context_Menu.Reload_IPFilter" href="#Context_Menu.Reload_IPFilter">Reload IPFilter</a> forces µTorrent to reload <a href="AppendixB_01.html#External_Files.Extended_Functionality.ipfilter.dat">ipfilter.dat</a>. This option is disabled when <a href="AppendixA_02_12.html#ipfilter.enable">ipfilter.enable</a> is disabled.</li>
 	<li class="sep">&nbsp;</li>
-	<li><a class="name" id="Context_Menu.Resolve_IPs" href="#Context_Menu.Resolve_IPs">Resolve IPs</a> tells &micro;Torrent to convert the IP addresses into hostnames for display purposes. This option must be enabled in order for flags to be displayed next to the peer.</li>
+	<li><a class="name" id="Context_Menu.Resolve_IPs" href="#Context_Menu.Resolve_IPs">Resolve IPs</a>
+tells µTorrent to convert the IP addresses into hostnames for display
+purposes. This option must be enabled in order for flags to be
+displayed next to the peer.</li>
 </ul>
 
 		</div>
 		<div class="navi" id="naviBot">
 			<ul>
-				<li><a href="AppendixA_01_05_02.html">&laquo;&nbsp; Previous</a></li>
-				<li><a href="AppendixA_01_05_04.html">Next &nbsp;&raquo;</a></li>
+				<li><a href="AppendixA_01_05_02.html">«&nbsp; Previous</a></li>
+				<li><a href="AppendixA_01_05_04.html">Next &nbsp;»</a></li>
 			</ul>
 		</div>
 	</div>
-</body>
-</html>
+</body></html>

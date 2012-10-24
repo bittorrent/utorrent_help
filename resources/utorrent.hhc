@@ -66,6 +66,11 @@
 				<param name="Local" value="html\Chapter02_04.html">
 				<param name="ImageNumber" value="11">
 				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Downloading Using the RSS Downloader ">
+				<param name="Local" value="html\Chapter02_05.html">
+				<param name="ImageNumber" value="11">
+				</OBJECT>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Chapter 03: Advanced Guides">
@@ -133,8 +138,18 @@
 					</OBJECT>
 				<UL>
 					<LI> <OBJECT type="text/sitemap">
-						<param name="Name" value="General">
+						<param name="Name" value="Files">
+						<param name="Local" value="html\AppendixA_01_05_05.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Info">
 						<param name="Local" value="html\AppendixA_01_05_01.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Ratings">
+						<param name="Local" value="html\AppendixA_01_05_08.html">
 						<param name="ImageNumber" value="11">
 						</OBJECT>
 					<LI> <OBJECT type="text/sitemap">
@@ -150,11 +165,6 @@
 					<LI> <OBJECT type="text/sitemap">
 						<param name="Name" value="Pieces">
 						<param name="Local" value="html\AppendixA_01_05_04.html">
-						<param name="ImageNumber" value="11">
-						</OBJECT>
-					<LI> <OBJECT type="text/sitemap">
-						<param name="Name" value="Files">
-						<param name="Local" value="html\AppendixA_01_05_05.html">
 						<param name="ImageNumber" value="11">
 						</OBJECT>
 					<LI> <OBJECT type="text/sitemap">
@@ -226,13 +236,24 @@
 					<param name="ImageNumber" value="11">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="Web UI">
+					<param name="Name" value="Remote">
 					<param name="Local" value="html\AppendixA_02_10.html">
+					<param name="URL" value="html\AppendixA_02_10.html">
 					<param name="ImageNumber" value="11">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="Playback">
 					<param name="Local" value="html\AppendixA_02_11.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DNA">
+					<param name="Local" value="html\AppendixA_02_11a.html">
+					<param name="ImageNumber" value="11">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Paired Devices">
+					<param name="Local" value="html\AppendixA_02_11b.html">
 					<param name="ImageNumber" value="11">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
@@ -249,6 +270,16 @@
 					<LI> <OBJECT type="text/sitemap">
 						<param name="Name" value="Disk Cache">
 						<param name="Local" value="html\AppendixA_02_12_02.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Web UI">
+						<param name="Local" value="html\AppendixA_02_12_03.html">
+						<param name="ImageNumber" value="11">
+						</OBJECT>
+					<LI> <OBJECT type="text/sitemap">
+						<param name="Name" value="Run Program">
+						<param name="Local" value="html\AppendixA_02_12_04.html">
 						<param name="ImageNumber" value="11">
 						</OBJECT>
 				</UL>
