@@ -1,11 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-	<title>&micro;Torrent User Manual - Redirect</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
-<body>
-	<script type="text/javascript">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><title>µTorrent User Manual - Redirect</title>
+
+
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /></head><body><br />
+
+	
+<script type="text/javascript">
 
 /* Map between path and actual pages */
 
@@ -27,7 +28,8 @@ var PageMap = [ "index.html",
 				pieces    : [ "html/AppendixA_01_05_04.html" ],
 				files     : [ "html/AppendixA_01_05_05.html" ],
 				speed     : [ "html/AppendixA_01_05_06.html" ],
-				logger    : [ "html/AppendixA_01_05_07.html" ]
+				logger    : [ "html/AppendixA_01_05_07.html" ],
+				ratings   : [ "html/AppendixA_01_05_08.html" ]
 			}],
 			statusbar        : [ "html/AppendixA_01_06.html" ]
 		}],
@@ -45,10 +47,14 @@ var PageMap = [ "index.html",
 			scheduler   : [ "html/AppendixA_02_09.html" ],
 			webui       : [ "html/AppendixA_02_10.html" ],
 			playback    : [ "html/AppendixA_02_11.html" ],
+			dna         : [ "html/AppendixA_02_11a.html" ],
+			paireddevices : [ "html/AppendixA_02_11b.html" ],
 			advanced    : [ "html/AppendixA_02_12.html" ,
 			{
 				uiextras  : [ "html/AppendixA_02_12_01.html" ],
-				diskcache : [ "html/AppendixA_02_12_02.html" ]
+				diskcache : [ "html/AppendixA_02_12_02.html" ],
+				webui     : [ "html/AppendixA_02_12_03.html" ],
+				runprogram : [ "html/AppendixA_02_12_04.html" ]
 			}]
 		}],
 
@@ -110,6 +116,8 @@ var tmpMap;
 tmpMap = traversePath( PageMap , "userinterface/preferences" );
 aliasPath( tmpMap , "uiextras"  , "advanced/uiextras"  );
 aliasPath( tmpMap , "diskcache" , "advanced/diskcache" );
+aliasPath( tmpMap , "webui" , "advanced/webui"  );
+aliasPath( tmpMap , "runprogram" , "advanced/runprogram"  );
 */
 
 /* Perform path traversal */
@@ -210,6 +218,4 @@ function printPaths(map, prefix) {
 	}
 }
 
-	</script>
-</body>
-</html>
+	</script></body></html>
