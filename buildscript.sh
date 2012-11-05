@@ -43,15 +43,15 @@ sed -i s/utorrent\.chm/bittorrent.chm/g $BTDIR/utorrent.hhp
 sed -i s/utorrent\.log/bittorrent.log/g $BTDIR/utorrent.hhp
 echo $BTVERSION-$REVISION-$DATE > $BTDIR/version.txt
 $hhc $(cygpath -w $BTDIR/utorrent.hhp)
-rm -f $DIR/output/bittorrent-help-${BTVERSION}0.zip
-$compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/bittorrent-help-${BTVERSION}0.zip) $(cygpath -w $BTDIR/bittorrent.chm) $(cygpath -w $BTDIR/version.txt)
+rm -f $DIR/output/bittorrent-help-${BTVERSION}1.zip
+$compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/bittorrent-help-${BTVERSION}1.zip) $(cygpath -w -a $BTDIR/bittorrent.chm) $(cygpath -w -a $BTDIR/version.txt)
 mv $BTDIR/bittorrent.log $DIR/output/
 rm -r $BTDIR
 
 echo $UTVERSION-$REVISION-$DATE > $DIR/resources/version.txt
 $hhc $(cygpath -w $DIR/resources/utorrent.hhp)
-rm -f $DIR/output/utorrent-help-${UTVERSION}0.zip
-$compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/utorrent-help-${UTVERSION}0.zip) $(cygpath -w $DIR/resources/utorrent.chm) $(cygpath -w $DIR/resources/version.txt)
+rm -f $DIR/output/utorrent-help-${UTVERSION}1.zip
+$compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/utorrent-help-${UTVERSION}1.zip) $(cygpath -w -a $DIR/resources/utorrent.chm) $(cygpath -w -a $DIR/resources/version.txt)
 mv $DIR/resources/utorrent.log $DIR/output/
 rm $DIR/resources/utorrent.chm
 rm $DIR/resources/version.txt
