@@ -37,17 +37,16 @@
 <h3><a class="name" id="Moving_Torrent_Contents" href="#Moving_Torrent_Contents">Moving Torrent Contents</a></h3>
 <p>This process, if you haven't already figured it out, might require the most amount of time out of any of the "migration" processes, as it might require that you allow &micro;Torrent to verify the data integrity of the torrent contents after the move. What's time consuming isn't really the procedure itself, but the fact that rechecking can take a lot of time, depending on the torrent contents' sizes, and how many different torrent jobs you want to move.</p>
 <p>Remember that the torrent contents are either a single file or a single folder (containing more files and folders, usually). The name of this file or folder is in &micro;Torrent's Name column, and by default, it matches the .torrent file name (without the .torrent suffix). The Save Directory column points to the content location, which is the parent folder of the torrent contents.</p>
-<p>If the torrent contents haven't yet been moved, follow this procedure:</p>
+<p>If the torrent contents haven't yet been moved, you can follow this procedure:</p>
 <ul>
 <li>Decide if you want to rename the torrent contents from the default. If you do, then change the name in the Name column before doing the next step. (You may also want to rename the downloaded .torrent file to match, in case you ever need to reload it.)</li>
-<li>In the torrent job's advanced options, <a href="AppendixA_01_04.html#Context_Menu.Torrent_Options.Advanced.Set_Download_Location">set the download location</a>. The torrent contents will immediately be moved to the folder you select. It's safe to do this even if the torrent job is active.</li>
+<li>In the torrent job's advanced options, <a href="AppendixA_01_04.html#Context_Menu.Torrent_Options.Advanced.Set_Download_Location">set the download location</a>. The torrent contents will immediately start moving to the folder you select. It's usually safe to do this even if the torrent job is active. However, moving large files across drives can be slow, and if the move is interrupted, such as by a disk filling up or no longer being accessible, then files will be split among the two locations, and &micro;Torrent won't be able to recover, so try to only move one or two torrents at a time by this method.</li>
 <li>That's it; you're done.</li>
 </ul>
-<p>Alternatively, you can move the contents without using &micro;Torrent:</p>
+<p>Alternatively, you can move the contents without using &micro;Torrent (this is safer for multiple, large torrents moving to different drives):</p>
 <ul>
 <li>In &micro;Torrent, if the torrent job is active, stop it.</li>
-<li>Outside of &micro;Torrent, move the torrent contents to wherever you like.</li>
-<li>Then follow the steps below to inform &micro;Torrent that the contents have been moved.</li>
+<li>Outside of &micro;Torrent (e.g., in Windows Explorer), move the torrent contents to wherever you like. After the content has moved, follow the steps below to inform &micro;Torrent of the new locations.</li>
 </ul>
 <p>If the torrent contents have already been moved, tell &micro;Torrent where they are:</p>
 <ul>
