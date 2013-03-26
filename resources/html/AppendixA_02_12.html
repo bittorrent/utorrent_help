@@ -104,9 +104,6 @@ but is currently not being used</p><br>
     href="#bt.enable_pulse">bt.enable_pulse</a>: Enabling this option effects
     ratings, and disables comments too.<span
     style="font-weight: normal;"></span></li>
-   <li><a id="bt.connect_speed" class="name"
-    href="#bt.save_resume_rate">bt.save_resume_rate</a>: This option set the
-    time interval for saving the "resume" data to every n seconds.</li>
   <li><a id="bt.enable_tracker" class="name"
     href="#bt.enable_tracker">bt.enable_tracker</a>: Enabling this option
     enables the rudimentary tracker embedded in µTorrent. If you wish to use
@@ -124,6 +121,9 @@ but is currently not being used</p><br>
     tracked. It is imperative that µTorrent is able to listen for incoming
     connections for this feature to work properly, so you have to make sure you
     have completely forwarded your ports in order to use the embedded tracker.
+  </li>
+	<li><a id="bt.failover_peer_speed_threshold" class="name"
+    href="#bt.failover_peer_speed_thresholdr">bt.failover_peer_speed_threshold</a>: 
   </li>
   <li><a id="bt.graceful_shutdown" class="name"
     href="#bt.graceful_shutdown">bt.graceful_shutdown</a>: If enabled,
@@ -190,9 +190,9 @@ but is currently not being used</p><br>
     makes downloaded files have the read-only attribute set when torrent is
     complete. This prevents MP3s and the like from being retagged by media
     players and corrupted.<a href="#Notes"><sup>3.3</sup></a> </li>
-  <li><a id="bt.scrape_stopped1" class="name"
-    href="#bt.scrape_stopped">bt.save_resume_rate</a>: This option sets
-    µTorrent to save resume data every n seconds.</li>
+     <li><a id="bt.connect_speed" class="name"
+    href="#bt.save_resume_rate">bt.save_resume_rate</a>: This option set the
+    time interval for saving the "resume" data to every n seconds.</li>
   <li><a id="bt.scrape_stopped" class="name"
     href="#bt.scrape_stopped">bt.scrape_stopped</a>: Enabling this option
     allows µTorrent to get seed and peer counts for torrent jobs that are
@@ -280,18 +280,7 @@ but is currently not being used</p><br>
     block. When µTorrent bans <span class="value">4</span> CIDR blocks of size
     <span class="value">/16</span> from the same <span class="value">/8</span>
     CIDR block, it will ban the entire <span class="value">/8</span> CIDR
-  block.
-   <li class="name"><a id="dht.rate" class="name"
-    href="AppendixA_02_12.html#dht.collect_rate">dht.collect_rate</a>: This
-    option will determine the rate at which RSS feeds via DHT - are being
-    scanned. TBD.</li>
-  <li><a id="dht.rate" class="name" href="#dht.rate">dht.rate</a>: This option
-    specifies the amount of bandwidth that DHT will use. The default value,
-    <span class="value">-1</span>, tells µTorrent to manage the bandwidth
-    usage automatically based on your maximum upload rate. The automatic value
-    is obtained by dividing your maximum upload rate by <span
-    class="value">16</span>. This value is interpreted in bytes per second, so
-    please enter it as such. </li>
+  block.</li>
   <li><a id="diskio.all_writes_sync" class="name"
     href="#diskio.all_writes_sync">diskio.all_writes_sync</a>: Enabling this
     option causes µTorrent to open files in synchronous mode so all writes are
