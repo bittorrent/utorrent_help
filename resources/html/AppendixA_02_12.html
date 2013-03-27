@@ -46,14 +46,12 @@ modify it without guidance.</p>
 <p><a href="#Notes">3.3</a>: This option is applicable only from µTorrent
 version 3.3 and above</p>
 
-<p><a href="#Notes">TBD</a>: This option still needs to be explained further</p>
-
-<p><a href="#Notes">Unused</a>: This option shows in the advanced preferences,
-but is currently not being used</p><br>
+<p>Some settings in the client are <a href="#unusedsettings">currently unused</a>.</p>
+<p></p>
 <li class="sep">&nbsp;</li>
 <p></p>
 <ul class="uienum">
-  <li><a id="bt.allow_same_ip1" class="name"
+  <li><a id="bt.allow_same_ip" class="name"
     href="#bt.allow_same_ip">bt.allow_same_ip</a>: Enabling this option allows
     multiple incoming connections from the same IP address. This option affects
     a single torrent job at a time, so you can still have the same IP address
@@ -163,12 +161,6 @@ but is currently not being used</p><br>
     href="#bt.prioritize_partial_pieces:">bt.prioritize_partial_pieces</a>: Enabling
     this option ('True'), tells µTorrent to always try to request blocks from
     pieces we've already started.</li>
-  <li><a id="bt.connect_speed" class="name"
-    href="#bt.pulse_interval">bt.pulse_interval</a>: <a
-    href="#Notes"><sup>Unused</sup></a> <a href="#Notes"><sup>3.3</sup></a></li>
-  <li><a id="bt.connect_speed2" class="name"
-    href="#bt.pulse_weight">bt.pulse_weight</a>: <a
-    href="#Notes"><sup>Unused</sup></a> <a href="#Notes"><sup>3.3</sup></a></li>
   <li><a id="bt.connect_speed21" class="name"
     href="#bt.pulse_weight">bt.randomize_peer_id</a>: Disabling this option
     tells µTorrent not to change peerid on every connection. It still uses
@@ -201,11 +193,6 @@ but is currently not being used</p><br>
     href="#bt.send_have_to_seed">bt.send_have_to_seed</a>: Enabling this option
     tells µTorrent to send a message to other seeds indicating how many pieces
     you currently have. </li>
-  <li><a id="bt.ratelimit_tcp_only12" class="name"
-    href="#bt.ratelimit_tcp_only">bt.send_max_sockbuf</a>: This debugging
-    option defines µTorrent's local send buffer socket size. Tweaking can
-    reduce memory usage, but may hurt performance if too low. <a
-    href="#Notes"><sup>3.3</sup></a></li>
   <li><a id="bt.set_sockbuf" class="name"
     href="#bt.set_sockbuf">bt.set_sockbuf</a>: This debugging option allows
     µTorrent to automatically detect the TCP buffer size periodically (<span
@@ -227,6 +214,11 @@ but is currently not being used</p><br>
     enter it as such. Setting this value to <span class="value">0</span> tells
     µTorrent to wait for an indefinite amount of time until it receives a
     response. </li>
+  <li><a id="bt.ratelimit_tcp_only12" class="name"
+    href="#bt.ratelimit_tcp_only">bt.send_max_sockbuf</a>: This debugging
+    option defines µTorrent's local send buffer socket size. Tweaking can
+    reduce memory usage, but may hurt performance if too low. <a
+    href="#Notes"><sup>3.3</sup></a></li>
   <li><a id="bt.tcp_rate_control" class="name"
     href="#bt.tcp_rate_control">bt.tcp_rate_control</a>: Enabling this option
     tells µTorrent to use information from the uTP transport as hints for
@@ -335,10 +327,6 @@ but is currently not being used</p><br>
     at that location in disk but isn't wiped will potentially be exposed for
     other applications and users to read, including those without volume
     maintenance privileges. </li>
-  <li><a id="diskio.quick_hash" class="name"
-    href="#diskio.quick_hash">diskio.quick_hash</a> : This option disables
-    compact allocation, might be POSIX only. <a
-    href="#Notes"><sup>Unused</sup></a></li>
   <li><a id="diskio.smart_hash1" class="name"
     href="#diskio.resume_min">diskio.resume_min</a>: Megabytes to be free on disk before torrent resumes<a
     href="#Notes"></a></li>
@@ -414,9 +402,6 @@ but is currently not being used</p><br>
     µTorrent will fall back to the regular behavior (as if this option were
     disabled), where it displays a crash dialog that allows the user to choose
     how to proceed. </li>
-  <li><a id="gui.compat_diropen1" class="name"
-    href="#gui.color_progress_bars">gui.color_progress_bars</a>: <a
-    href="#Notes"><sup>TBD</sup></a> Currently broken...</li>
   <li><a id="gui.compat_diropen2" class="name"
     href="#gui.compat_diropen">gui.combine_listview_status_done</a>: This
     option will show you the progress of the download (% done downloading)
@@ -463,10 +448,6 @@ but is currently not being used</p><br>
     style="font-size: 12pt; font-family: &#34;Times New Roman&#34;,&#34;serif&#34;;">.
     <br />
     <!--[endif]--></span></li>
-  <li><a id="gui.delete_to_trash" class="name"
-    href="#gui.enable_ratings">gui.enable_ratings</a>: <a
-    href="#Notes"><sup>Unused</sup></a><br />
-  </li>
   <li><a id="gui.graph_legend" class="name"
     href="#gui.graph_legend">gui.graph_legend</a>: This option tells µTorrent
     to draw a legend over the graphs displayed in the <a
@@ -531,12 +512,6 @@ but is currently not being used</p><br>
   <li><a id="gui.report_problems8" class="name"
     href="#gui.show_status_icon_on_dl_list">gui.show_status_icon_on_dl_list</a>:
     This option shows status icons in the main listview of torrents.</li>
-  <li><a id="gui.report_problems9" class="name"
-    href="#gui.show_welcopme_node">gui.show_welcome_node</a>: <a
-    href="#Notes"><sup>Unused</sup></a></li>
-  <li><a id="gui.report_problems" class="name"
-    href="#gui.toolbar_labels">gui.toolbar_labels</a>: <a
-    href="#Notes"><sup>TBD</sup></a>. Currently broken ...</li>
   <li><a id="gui.tall_category_list" class="name"
     href="#gui.tall_category_list">gui.tall_category_list</a>: This option
     toggles the <a href="AppendixA_01_03.html">Category List</a>'s height
@@ -809,15 +784,6 @@ but is currently not being used</p><br>
     href="#remove_torrent_files_with_private_data">remove_torrent_files_with_private_data</a>:
     This option deletes torrents in the .torrent files directory that are not
     loaded into client.</li>
-  <li><a id="queue.use_seed_peer_ratio2" class="name"
-    href="#streaming.failover_rate_factor">remove_torrent_files_with_private_data</a>:
-    <a href="#Notes"><sup>Unused</sup></a></li>
-  <li><a id="queue.use_seed_peer_ratio7" class="name"
-    href="#resume.dir_only">resume.dir_only</a>: <a
-    href="#Notes"><sup>Unused</sup></a></li>
-  <li><a id="queue.use_seed_peer_ratio8" class="name"
-    href="#resume.enable_resume_dir">resume.enable_resume_dir</a>: <a
-    href="#Notes"><sup>Unused</sup></a></li>
   <li><a id="rss.feed_as_default_label" class="name"
     href="#rss.feed_as_default_label">rss.feed_as_default_label</a>: When this
     option is enabled, µTorrent will use an RSS feed's name as the default
@@ -832,9 +798,6 @@ but is currently not being used</p><br>
     This value is interpreted in minutes, so please enter it as such. Any value
     below <span class="value">5</span> will be ignored (and <span
     class="value">5</span> will be used instead). </li>
-  <li><a id="queue.use_seed_peer_ratio9" class="name"
-    href="#silent_auto_updates">silent_auto_updates</a>: <a
-    href="#Notes"><sup>Unused</sup></a></li>
   <li><a id="queue.use_seed_peer_ratio10" class="name"
     href="#sponsored_torrent_offer_enabled">sponsored_torrent_offer_enabled</a>:
     This options enables new "Offer"-torrents by Bittorrent Inc located at the
@@ -844,9 +807,6 @@ but is currently not being used</p><br>
   <li><a id="queue.use_seed_peer_ratio" class="name"
     href="#store_torr_infohash">store_torr_infohash</a>: This option saves the
     .torrent file as INFOHASH.torrent (e.g. ABCDEF1234567890ABCD.torrent).</li>
-  <li><a id="queue.use_seed_peer_ratio3" class="name"
-    href="#streaming.failover_rate_factor">streaming.failover_rate_factor</a>:
-    <a href="#Notes"><sup>Unused</sup></a></li>
   <li><a id="queue.use_seed_peer_ratio4" class="name"
     href="#streaming.failover_set_percentage">streaming.failover_set_percentage</a>:
     This option sets the maximum size of the failover set, expressed as
@@ -867,9 +827,6 @@ but is currently not being used</p><br>
   <li><a id="webui.token_auth1" class="name"
     href="#webui.allow_pairing">webui.allow_pairing</a>: This option allows
     device/service to pair with the client and control it via WebUI.</li>
-  <li><a id="webui.token_auth2" class="name"
-    href="AppendixA_02_12.html#webui.ssdp_uuid">webui.ssdp_uuid</a>: <a
-    href="#Notes"><sup>TBD</sup></a></li>
   <li><a id="webui.token_auth3" class="name"
     href="#webui.token_auth">webui.token_auth</a>: This option enables the
     token authentication system for the Web UI, which is a method for
@@ -883,8 +840,60 @@ but is currently not being used</p><br>
     token authentication: 0 means that it applies to all connections, 1 means
     that it applies only to remote connections (i.e. not localhost).</li>
 </ul>
-</div>
+<li class="sep">&nbsp;</li>
+<p><h3 class="name" id="unusedsettings">Currently Unused Settings</h3></p>
+<ul>
+ <li><a id="dht.collect_feed" class="name"
+    href="#dht-collect_feed">dht.collect_feed</a></li>
+ <li><a id="dht.rate" class="name"
+    href="#dht.rate">dht.rate</a></li>
+<li><a id="btapps.app_store" class="name"
+    href="#btapps.app_store">btapps.app_store</a></li>  
+ 
+<li><a id="btapps.apps_channel" class="name"
+    href="#btapps.app_channel">btapps.app_channel</a></li> 
+<li><a id="btapps.auto_update_btapps" class="name"
+    href="#btapps.auto_update_btapps">btapps.auto_update_btapps</a></li>  
+<li><a id="btapps.auto_update_btinstalls" class="name"
+    href="#btapps.auto_update_btinstalls">btapps.auto_update_btinstalls</a></li>  
+<li><a id="btapps.enable_activex" class="name"
+    href="#btapps.enable_activex">btapps.enable_activex</a></li> 
+<li><a id="btapps.install_unsigned_apps" class="name"
+    href="#btapps.install_unsigned_apps">btapps.install_unsigned_apps</a></li>  
+      <li><a id="bt.connect_speed" class="name"
+    href="#bt.pulse_interval">bt.pulse_interval</a></li>
+  <li><a id="bt.connect_speed2" class="name"
+    href="#bt.pulse_weight">bt.pulse_weight</a> </li>
+    <li><a id="diskio.quick_hash" class="name"
+    href="#diskio.quick_hash">diskio.quick_hash</a></li>
+      <li><a id="gui.delete_to_trash" class="name"
+    href="#gui.enable_ratings">gui.enable_ratings</li>
+  </li>
+    <li><a id="gui.compat_diropen1" class="name"
+    href="#gui.color_progress_bars">gui.color_progress_bars</a></li>
+ <li><a id="gui.report_problems9" class="name"
+    href="#gui.show_welcopme_node">gui.show_welcome_node</a></li>
+  <li><a id="gui.report_problems" class="name"
+    href="#gui.toolbar_labels">gui.toolbar_labels</a></li>   
+     <li><a id="queue.use_seed_peer_ratio2" class="name"
+    href="#streaming.failover_rate_factor">remove_torrent_files_with_private_data</a>
+   </li>
+  <li><a id="queue.use_seed_peer_ratio7" class="name"
+    href="#resume.dir_only">resume.dir_only</a> </li>
+  <li><a id="queue.use_seed_peer_ratio8" class="name"
+    href="#resume.enable_resume_dir">resume.enable_resume_dir</a></li>
+       <li><a id="queue.use_seed_peer_ratio3" class="name"
+    href="#streaming.failover_rate_factor">streaming.failover_rate_factor</a>
+</li>
+      <li><a id="queue.use_seed_peer_ratio9" class="name"
+    href="#silent_auto_updates">silent_auto_updates</a> </li>
+      <li><a id="webui.token_auth2" class="name"
+    href="AppendixA_02_12.html#webui.ssdp_uuid">webui.ssdp_uuid</a></li>
+   
+    
+    </ul>
 
+</div>
 <div class="navi" id="naviBot">
 <ul>
   <li><a href="AppendixA_02_11b.html">�  Previous</a> </li>
