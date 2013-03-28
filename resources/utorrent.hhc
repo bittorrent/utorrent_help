@@ -247,11 +247,6 @@
 					<param name="ImageNumber" value="11">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="DNA">
-					<param name="Local" value="html\AppendixA_02_11a.html">
-					<param name="ImageNumber" value="11">
-					</OBJECT>
-				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="Paired Devices">
 					<param name="Local" value="html\AppendixA_02_11b.html">
 					<param name="ImageNumber" value="11">
@@ -435,6 +430,11 @@
 			<param name="Local" value="html\ExternalLinks.html">
 			<param name="ImageNumber" value="11">
 			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Changelog">
+			<param name="Local" value="html\changelog.html">
+			<param name="ImageNumber" value="11">
+		    </OBJECT>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Credits">
 			<param name="Local" value="html\Credits.html">
