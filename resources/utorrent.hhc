@@ -432,7 +432,7 @@
 			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Changelog">
-			<param name="Local" value="html\changelog.html">
+			<param name="Local" value="html\Changelog.html">
 			<param name="ImageNumber" value="11">
 		    </OBJECT>
 		<LI> <OBJECT type="text/sitemap">
