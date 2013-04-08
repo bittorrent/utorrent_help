@@ -1,9 +1,9 @@
 #!/bin/bash
 set LANG="C.utf8"
 echo "This CHM compiler script will only work on cygwin. Requires 7z.exe and 7z.dll!"
-LONGUTVERSION="3.2.1"
-LONGBTVERSION="7.7.1"
-REVISION=28086
+LONGUTVERSION="3.3.0"
+LONGBTVERSION="7.8.0"
+REVISION=29642
 DATE=$(date +"%Y%m%d")
 DIR=$(dirname $0);
 BTDIR=/tmp/bittorrent
