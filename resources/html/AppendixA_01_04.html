@@ -72,6 +72,7 @@ progress.</li>
 displays the date and time that the torrent job finished downloading.
 If the torrent job has yet to be completed, this column will be blank.</li>
 	<li><a class="name" id="Debug" href="#Debug">Debug</a> displays information that might be useful in debugging problems.</li>
+		<li><a class="name" id="Disk_Job" href="#Disk_Job">Disk Job</a> displays information on any torrent jobs that are having disk I/O issues.</li>
 	<li><a class="name" id="Done" href="#Done">Done</a>
 displays the approximate percent of the torrent job that µTorrent has
 completed. Its value is calculated by dividing the number under the <a href="#Completed">Completed</a> column by the number under the <a href="#Selected_Size">Selected Size</a> column. If <a href="AppendixA_02_12.html#gui.graphic_progress">gui.graphic_progress</a> is enabled, µTorrent will draw a progress bar behind the percentage. If <a href="AppendixA_02_12.html#gui.piecebar_progress">gui.piecebar_progress</a> is enabled, µTorrent will draw a piece progress bar instead.</li>
@@ -299,6 +300,8 @@ lets you set the location of the contents for the particular torrent if
 they are ever moved after the torrent job is added. The next time the
 torrent job is started, it will be hash checked to verify the data
 integrity.</li>
+<li><a class="name" id="Context_Menu.Torrent_Options.Advanced.Set_Destination_name" href="#Context_Menu.Torrent_Options.Advanced.Set_Destination_Name">Set Destination Name...</a>
+lets you change the name of the directory into which the files will be downloaded.</li>
 					<li><a class="name" id="Context_Menu.Torrent_Options.Advanced.Show_Download_Bar" href="#Context_Menu.Torrent_Options.Advanced.Show_Download_Bar">Show Download Bar</a>
 toggles the display of a floating download bar that shows quick
 statistics for the selected torrent job(s). The download bars are
