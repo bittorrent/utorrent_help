@@ -5,7 +5,7 @@ if [ -z "$(uname -a | grep CYGWIN_NT)" ]; then
 	echo "Please run this script on cygwin."
 	exit
 fi
-LONGUTVERSION="3.3.0"
+LONGUTVERSION="3.3.1"
 LONGBTVERSION="7.8.0"
 REVISION=29642
 DATE=$(date +"%Y%m%d")
