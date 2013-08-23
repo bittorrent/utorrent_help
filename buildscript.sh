@@ -53,7 +53,7 @@ mv $BTDIR/bittorrent.log $DIR/output/
 rm -r $BTDIR
 
 echo $UTVERSION-$REVISION-$DATE > $DIR/resources/version.txt
-$hhc $(cygpath -w $DIR/resources/utorrent.hhp)
+$hhc $(cygpath -a -w $DIR/resources/utorrent.hhp)
 rm -f $DIR/output/utorrent-help-${UTVERSION}1.zip
 $compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/utorrent-help-${UTVERSION}1.zip) $(cygpath -w -a $DIR/resources/utorrent.chm) $(cygpath -w -a $DIR/resources/version.txt)
 mv $DIR/resources/utorrent.log $DIR/output/
