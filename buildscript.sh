@@ -48,7 +48,7 @@ sed -i s/utorrent\.log/bittorrent.log/g $BTDIR/utorrent.hhp
 echo $BTVERSION-$REVISION-$DATE > $BTDIR/version.txt
 $hhc $(cygpath -w $BTDIR/utorrent.hhp)
 rm -f $DIR/output/bittorrent-help-${BTVERSION}1.zip
-$compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/bittorrent-help-${BTVERSION}1.zip) $(cygpath -w -a $BTDIR/bittorrent.chm) $(cygpath -w -a $BTDIR/version.txt)
+$compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/bittorrent-help-${BTVERSION}0.zip) $(cygpath -w -a $BTDIR/bittorrent.chm) $(cygpath -w -a $BTDIR/version.txt)
 mv $BTDIR/bittorrent.log $DIR/output/
 rm -r $BTDIR
 
