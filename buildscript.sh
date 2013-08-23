@@ -5,9 +5,9 @@ if [ -z "$(uname -a | grep CYGWIN_NT)" ]; then
 	echo "Please run this script on cygwin."
 	exit
 fi
-LONGUTVERSION="3.3.1"
-LONGBTVERSION="7.8.0"
-REVISION=29642
+LONGUTVERSION="3.3.2"
+LONGBTVERSION="7.8.1"
+REVISION=29976
 DATE=$(date +"%Y%m%d")
 DIR=$(dirname $0);
 BTDIR=/tmp/bittorrent
