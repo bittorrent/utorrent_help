@@ -35,8 +35,27 @@
 <p>If any of those tips fail, and you are unable to keep paths identical for either the settings directory or the torrent contents, then you're in for a very long ride, and will have to perform everything as if you had moved the torrent contents.</p>
 
 <h3><a class="name" id="Moving_Torrent_Contents" href="#Moving_Torrent_Contents">Moving Torrent Contents</a></h3>
-<p>This process, if you haven't already figured it out, might require the most amount of time out of any of the "migration" processes, as it might require that you allow &micro;Torrent to verify the data integrity of the torrent contents after the move. What's time consuming isn't really the procedure itself, but the fact that rechecking can take a lot of time, depending on the torrent contents' sizes, and how many different torrent jobs you want to move. All that's needed when you're moving torrent contents is that you stop the torrent job in &micro;Torrent, move the torrent contents to wherever you need them to be, <a href="AppendixA_01_04.html#Context_Menu.Torrent_Options.Advanced.Set_Download_Location">set the download location</a> for each associated torrent job for the moved contents, and start the torrent job. If &micro;Torrent doesn't recognize the existing data, stop the torrent job and <a href="AppendixA_01_04.html#Context_Menu.Torrent_Options.Force_Re-Check">force re-check</a> for each relevant torrent job.</p>
-
+<p>This process, if you haven't already figured it out, might require the most amount of time out of any of the "migration" processes, as it might require that you allow &micro;Torrent to verify the data integrity of the torrent contents after the move. What's time consuming isn't really the procedure itself, but the fact that rechecking can take a lot of time, depending on the torrent contents' sizes, and how many different torrent jobs you want to move.</p>
+<p>Remember that the torrent contents are either a single file or a single folder (containing more files and folders, usually). The name of this file or folder is in &micro;Torrent's Name column, and by default, it matches the .torrent file name (without the .torrent suffix). The Save Directory column points to the content location, which is the parent folder of the torrent contents.</p>
+<p>If the torrent contents haven't yet been moved, you can follow this procedure:</p>
+<ul>
+<li>Decide if you want to rename the torrent contents from the default. If you do, then change the name in the Name column before doing the next step. (You may also want to rename the downloaded .torrent file to match, in case you ever need to reload it.)</li>
+<li>In the torrent job's advanced options, <a href="AppendixA_01_04.html#Context_Menu.Torrent_Options.Advanced.Set_Download_Location">set the download location</a>. The torrent contents will immediately start moving to the folder you select. It's usually safe to do this even if the torrent job is active. However, moving large files across drives can be slow, and if the move is interrupted, such as by a disk filling up or no longer being accessible, then files will be split among the two locations, and &micro;Torrent won't be able to recover, so try to only move one or two torrents at a time by this method.</li>
+<li>That's it; you're done.</li>
+</ul>
+<p>Alternatively, you can move the contents without using &micro;Torrent (this is safer for multiple, large torrents moving to different drives):</p>
+<ul>
+<li>In &micro;Torrent, if the torrent job is active, stop it.</li>
+<li>Outside of &micro;Torrent (e.g., in Windows Explorer), move the torrent contents to wherever you like. After the content has moved, follow the steps below to inform &micro;Torrent of the new locations.</li>
+</ul>
+<p>If the torrent contents have already been moved, tell &micro;Torrent where they are:</p>
+<ul>
+<li>If you gave the torrent contents a new name, then in &micro;Torrent, in the Name column, change the torrent name to match.</li>
+<li>In the torrent job's advanced options, <a href="AppendixA_01_04.html#Context_Menu.Torrent_Options.Advanced.Set_Download_Location">set the download location</a>. Choose the torrent contents' actual parent folder. (If the contents <em>are</em> a folder, make sure you don't choose that folder; you want one level up.)</li>
+<li>If you chose the right folder, you will be prompted that the file move target exists, and you'll be asked whether to overwrite. If you choose Yes, then the existing content will be erased and you will need to re-download, so probably the answer you want is No. If you were not prompted, then you probably chose the wrong folder, or the torrent name in &micro;Torrent doesn't match the torrent contents name on disk.</li>
+<li>In the torrent job options, choose <a href="AppendixA_01_04.html#Context_Menu.Torrent_Options.Force_Re-Check">Force Re-check</a>.</p>
+</ul>
+<p>In any case, if you need to move the contents of many torrents, you can set their locations all at once by selecting all of their jobs (hold Shift or Ctrl while choosing), before <a href="AppendixA_01_04.html#Context_Menu.Torrent_Options.Advanced.Set_Download_Location">setting the download location</a> on one of them. You will be prompted multiple times for a destination folder, once for each torrent.</p>
 		</div>
 		<div class="navi" id="naviBot">
 			<ul>
