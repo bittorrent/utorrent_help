@@ -1,6 +1,6 @@
 #!/bin/bash
-echo "This CHM compiler script will only work on cygwin. Requires 7z.exe and 7z.dll!"
 set LANG="C.utf8"
+echo "This CHM compiler script will only work on cygwin. Requires 7z.exe and 7z.dll!"
 if [ -z "$(uname -a | grep CYGWIN_NT)" ]; then
 	echo "Please run this script on cygwin."
 	exit
