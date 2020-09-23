@@ -419,6 +419,10 @@
 				<param name="Local" value="html\FAQ_08.html">
 				<param name="ImageNumber" value="11">
 				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="BitTorrent Speed">
+				<param name="Local" value="html\FAQ_09.html">
+				</OBJECT>
 		</UL>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Glossary">
@@ -434,7 +438,7 @@
 			<param name="Name" value="Changelog">
 			<param name="Local" value="html\Changelog.html">
 			<param name="ImageNumber" value="11">
-		    </OBJECT>
+			</OBJECT>
 		<LI> <OBJECT type="text/sitemap">
 			<param name="Name" value="Credits">
 			<param name="Local" value="html\Credits.html">

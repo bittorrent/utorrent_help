@@ -37,6 +37,11 @@
 	<dt><a class="name" id="block" href="#block">block</a></dt>
 	<dd>The units of data that comprise a <a href="#piece">piece</a>. Because blocks do not directly affect whether torrent contents are considered to be finished transferring, it is not seen as an appreciable unit of data with regards to BitTorrent like the piece is.</dd>
 
+
+    <dt><a class="name" id="blockchain" href="#blockchain">Blockchain</a></dt>
+	<dd>A type of distributed, decentralized public ledger comprised of a sequence of blocks (digital information) stored in a chain (database). Three types of digital information are stored in each block: transaction information, transaction participation information, and information that uniquely identifies the block. </dd>
+
+
 	<dt><a class="name" id="byte" href="#byte">byte</a></dt>
 	<dd>A unit used for measuring the size of data on a computer storage device. Many people confuse "byte" for "bit" when referring to speeds. A byte is composed of <span class="value">8</span> bits, so there is a clear distinction, and terminology should not be confused when referring to bytes.</dd>
 
@@ -52,11 +57,18 @@
 
 	<dt><a class="name" id="client" href="#client">client</a></dt>
 	<dd>The application a user is using when connected to a <a href="#swarm">swarm</a>. In this case, the application being used to connect to swarms is &micro;Torrent, so it is the client.</dd>
+
+    <dt><a class="name" id="cryptographic_token" href="#cryptographic_token">Cryptographic token</a></dt>
+	<dd>A unit of accounting that is used to represent the digital balance of an asset. Represents a particular fungible and tradable asset or a utility that is often found on a blockchain. The ownership of a token is evidenced through cryptographic mechanisms. Tokens are the fuel of a network, used to reward stakeholders for network services and make the network attack resistant. Cryptographic tokens are tradable and transferrable among the various participants of the blockchain. All cryptocurrencies are cryptographic tokens, but not all cryptographic tokens are cryptocurrencies. </dd>
+	
 </dl>
 
 <hr />
 <h3><a class="name" id="D" href="#D">D</a></h3>
 <dl>
+	<dt><a class="name" id="Decentralized_web" href="#Decentralized_web">Decentralized web</a></dt>
+	<dd>A future iteration of web technology in which all computers both request and provide services; in other words, services are distributed, not localized. The decentralized web is an application of the principles of peer-to-peer networking to websites and web applications. The decentralized web has five components of services: computation, file storage, external data, monetization, and payments. Information is identified based on its content rather than its location on a server. </dd>
+
 	<dt><a class="name" id="DHCP" href="#DHCP">DHCP (Dynamic Host Configuration Protocol)</a></dt>
 	<dd>A <a href="#protocol">protocol</a> that allows networked devices to be assigned an unique <a href="#IP_address">IP address</a> automatically from a pool of unused IP addresses.</dd>
 
@@ -124,6 +136,9 @@
 <dl>
 	<dt><a class="name" id="index" href="#index">index</a></dt>
 	<dd>A site that lists .torrent files available for download.</dd>
+
+	<dt><a class="name" id="Infohash" href="#Infohash">Infohash</a></dt>
+	<dd>An infohash is a unique “fingerprint” of data. It is used to prove the validity of a file and to locate other peers in a swarm. </dd>
 
 	<dt><a class="name" id="Initial_Seeding" href="#Initial_Seeding">Initial Seeding (Super Seeding)</a></dt>
 	<dd>A method of seeding that attempts to decrease the bandwidth load for the initial seeder. With normal seeding methods, the initial seeder typically has to upload <span class="value">150</span>% to <span class="value">200</span>%, or even more, of the original data in before a full copy of the data has been distributed into the swarm. With initial seeding, the initial seed attempts to get the rarest pieces out instead of uploading identical pieces repeatedly, often lowering the initial upload requirement to <span class="value">105</span>%. Initial seeding does not necessarily improve upload speeds or decrease seeding time. It should be used only if you are the sole seeder on the swarm, and if there are at least 2 peers connected. Generally, initial seeding should not be used by people with high upload speeds.</dd>
@@ -264,8 +279,12 @@
 	<dt><a class="name" id="ratio" href="#ratio">ratio</a></dt>
 	<dd>A number derived from the division of two other numbers. In the context of BitTorrent, people are normally referring to <a href="#share_ratio">share ratio</a> when they speak of a ratio.</dd>
 
-	<dt><a class="name" id="reseed" href="#reseed">reseed</a></dt>
+	<dt><a class="name" id="Recovery_Phrase" href="#Recovery_Phrase">Recovery Phrase</a></dt>
+	<dd>AKA Seed Phrase, Mnemonic Phrase. A multi-word phrase (For example, something like “correct-horse-staple-battery…”) which allows a user to recover a lost private key or recover a private key in the case of a forgotten password. This phrase maps directly to the key; no password or connection to the cloud is required if a user (or attacker) has this phrase. Users are encouraged to write these down and hide them in a secure physical location. This is the last line of defense against losing your private key. </dd>
+
+    <dt><a class="name" id="reseed" href="#reseed">reseed</a></dt>
 	<dd>The act of rejoining a swarm with no seeds as a <a href="#seed">seed</a>.</dd>
+	
 
 	<dt><a class="name" id="RSS_feed" href="#RSS_feed">RSS feed</a></dt>
 	<dd>A file that is updated so that it delivers information and content in such a way that allows one to track updates quickly and easily.</dd>
@@ -322,6 +341,18 @@
 <hr />
 <h3><a class="name" id="W" href="#W">W</a></h3>
 <dl>
+
+    <dt><a class="name" id="Wallet_Password" href="#Wallet_Password">Wallet Password</a></dt>
+	<dd>A password which serves to locally decrypt a private key stored on a user’s disk. The password should be kept in secret because anyone who gains access to the device can retrieve the private key and steal the wallet’s funds. </dd>
+
+    <dt><a class="name" id="Private_Key" href="#Private_Key">Wallet’s Private Key</a></dt>
+	<dd>The private key associated with a wallet. This must be kept strictly secret; anyone who has this key controls all funds stored on the blockchain by the wallet. 
+	</dd>
+
+	<dt><a class="name" id="Public_Key" href="#Public_Key">Wallet’s Public Key</a></dt>
+	<dd>The public key associated with a wallet. This can be published. It is effectively the same thing as the wallet ID. Knowing it allows anyone to inspect a history of transactions on the chain or send coins or tokens to its owner. 
+	</dd>
+	
 	<dt><a class="name" id="WAN" href="#WAN">WAN (Wide Area Network)</a></dt>
 	<dd>A computer network that covers a large geographical area. A WAN connects multiple <a href="#LAN">LAN</a>s together. The Internet is an example of a WAN.</dd>
 

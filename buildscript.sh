@@ -1,6 +1,6 @@
 #!/bin/bash
+clear
 set LANG="C.utf8"
-echo "This CHM compiler script will only work on cygwin. Requires 7z.exe and 7z.dll!"
 if [ -z "$(uname -a | grep CYGWIN_NT)" ]; then
 	echo "Please run this script on cygwin."
 	exit
@@ -10,6 +10,7 @@ LONGBTVERSION="7.8.1"
 REVISION=29976
 DATE=$(date +"%Y%m%d")
 DIR=$(dirname $0);
+echo "DIR=$DIR"
 BTDIR=/tmp/bittorrent
 cd $DIR
 which hhc.exe > /dev/null 2>&1
@@ -59,4 +60,3 @@ $compress a -tzip -y -mx=9 $(cygpath -w $DIR/output/utorrent-help-${UTVERSION}1.
 mv $DIR/resources/utorrent.log $DIR/output/
 rm $DIR/resources/utorrent.chm
 rm $DIR/resources/version.txt
-
