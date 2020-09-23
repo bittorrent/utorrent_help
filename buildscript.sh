@@ -1,5 +1,4 @@
 #!/bin/bash
-clear
 set LANG="C.utf8"
 if [ -z "$(uname -a | grep CYGWIN_NT)" ]; then
 	echo "Please run this script on cygwin."
@@ -10,7 +9,6 @@ LONGBTVERSION="7.8.1"
 REVISION=29976
 DATE=$(date +"%Y%m%d")
 DIR=$(dirname $0);
-echo "DIR=$DIR"
 BTDIR=/tmp/bittorrent
 cd $DIR
 which hhc.exe > /dev/null 2>&1
